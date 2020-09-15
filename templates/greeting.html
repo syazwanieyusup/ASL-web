@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  /* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  height: 30%;
+  padding: 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card img:hover {
+  opacity: 0.85;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+  
+
+h1{
+    background-color:#E6F2FA; 
+    color: gray;
+    margin: 7%;
+    font-weight: bold;
+    text-align:center;    
+    }
+
+.img {
+  display: block;
+  width: 70%;
+  height: auto;
+}
+
+
+
+ </style>
+ </head>
+ 
+ 
+<body>
+<div class="container text-center" >    
+  <center><br><h1 >ASAS KOD TANGAN</h1></br></center>
+  
+  
+<div class="row">
+<div class="column">
+<div class="card">
+  <img src="static/images/greet1.png" alt="product1" style="width:100%">
+  <h1>SALAM SEJAHTERA</h1>
+  <p><a href="/salamsejahtera" class="btn btn-warning btn-custom-1 mt-4">Klik Disini</a></p>
+  
+</div>
+</div>
+ <div class="column">
+<div class="card">
+  <img src="static/images/thankyoux.jpg" alt="product2" style="width:100%">
+  <h1>TERIMA KASIH</h1>
+  <p><a href="terimakasih" class="btn btn-primary btn-custom-1 mt-4">Klik Disini</a></p>
+</div>
+</div>
+ <div class="column">
+<div class="card">
+  <img src="static/images/sorry.png" alt="product2" style="width:100%"></br>
+  <h1>MAAF</h1></br>
+  <p><a href="/maaf" class="btn btn-primary btn-custom-1 mt-4">Klik Disini</a></p></br>
+</div>
+</div>
+ <div class="column">
+<div class="card">
+  <img src="static/images/hand.png" alt="product3" style="width:100%"></br>
+  <h1>TOLONG</h1></br>
+  <p><a href="/tolong" class="btn btn-warning btn-custom-1 mt-4">Klik Disini</a></p></br>
+</div>
+</div>
+
+
+</div>
+
+
+</body>
+</html>
+{% endblock %}
+  
+
